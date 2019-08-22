@@ -1,0 +1,52 @@
+    1  pacman -s 
+    2  pacman S
+    3  pacman -h
+    4  pacman -S
+    5  sudopacman -S
+    6  sudo sudopacman -S
+    7  sudo sudopacman -S
+    8  sudo pacman -S
+    9  sudo pacman -S chromium
+   10  sudo pacman -R firefox
+   11  cd /
+   12  export TERM=xterm
+   13  clear
+   14  cat /proc/sys/vm/swappiness
+   15  sudo nano /etc/sysctl.d/100-manjaro.conf
+   16  reboot
+   17  cat /proc/sys/vm/swappiness
+   18  sudo nano /bin/gufw
+   19  sudo nano /bin/gufw
+   20  gufw
+   21  sudo systemctl enable fstrim.timer
+   22  whoami
+   23  hostname
+   24  mkdir ~/week1
+   25  cd  ~/week1
+   26  less
+   27  grep /usr/bin
+   28  grep /usr/bin gcc
+   29  grep gcc  /usr/bin
+   30  ls  /usr/bin
+   31  ls  /usr/bin > ~week1/ex1.txt
+   32  tocuh ex1.txt
+   33  touch ex1.txt
+   34  ls  /usr/bin > ~week1/ex1.txt
+   35  ls  /usr/bin > ~/week1/ex1.txt
+   36  tail
+   37  ls tail
+   38  tail
+   39  history
+   40  history > ex2.txt
+   41  touch ex3.sh
+   42  ex3.sh
+   43  nano ex3.sh
+   44  sh ex3.sh
+   45  gedit
+   46  kate
+   47  nano main.c
+   48  gcc main.c -0 ex4
+   49  gcc main.c -o ex4
+   50  nano main.c
+   51  gcc main.c -o ex4
+   52  history > ex2.txt
