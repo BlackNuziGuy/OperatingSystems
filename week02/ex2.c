@@ -1,26 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 
 
 int main(){
 
     char str[1000];
+	printf("Enter the string:");
     fgets(str, 1000,stdin);
-    unsigned i = 0,j = strlen(str) - 1 ;
-    char a;
+	int i = 0;
+	
+	
 
-    while( i < j){
-
-        a = str[i];
-        str[i] = str[j];
-        str[j] = a;
-
-
-        i++,j--;
-    }
-
-
-    printf("%s",str);
+	for(; str[i] != '\0'; i++); //Find the last char
+	for(;i >= 0; i--){
+		putchar(str[i]); //Print in reverse
+	};
 
 
     return 0;
