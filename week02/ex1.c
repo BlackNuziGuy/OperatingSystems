@@ -17,7 +17,7 @@ int main() {
 
     printf("INT 'a' has value = %d AND size:%u\n",a, sizeof(a));
     printf("FLOAT 'b' has value = %f AND size:%u\n",b, sizeof(b));
-    printf("DOUBLE 'c' has value = %lf AND size:%u\n",c, sizeof(c));
+    printf("DOUBLE 'c' has value = %g AND size:%u\n",c, sizeof(c));
 
 
     return 0;

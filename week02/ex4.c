@@ -14,9 +14,8 @@ int main() {
     int a,b;
     printf("Please enter two integers:");
     scanf("%d %d",&a,&b);
-    int *pa = &a, *pb = &b;
 
-    swap(pa,pb);
+    swap(&a,&b);
 
     printf("The values after swap are: %d %d",a,b);
 
