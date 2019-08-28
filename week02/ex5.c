@@ -8,14 +8,18 @@ void Rotated(int n);
 
 void Square(int n);
 
-int main() {
+int main(int argc, char **argv) {
+
+	if ( argc != 2){
+		return 228;
+	}
 
     int n, type;
     printf("Input figure type(1-Triangle; 2-Half-triangle; 3-Rotated Triangle; 4-Square):");
     scanf("%d", &type);
-    printf("Input size:");
-    scanf("%d", &n);
-    printf("\n");
+    sscanf(argv[1],"%d", &n);
+	printf("\n");
+
 
     switch (type) {
         case 1 :

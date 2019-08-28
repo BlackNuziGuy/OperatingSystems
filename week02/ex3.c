@@ -2,13 +2,17 @@
 
 void Triangle(int n);
 
-int main() {
+int main(int argc, char**argv) {
 
-    int n;
-    printf("Input size:");
-    scanf("%d", &n);
-    Triangle(n);
-    return 0;
+
+	if (argc == 2){
+		int n;	
+		sscanf(argv[1], "%d",&n);
+		Triangle(n);
+		return 0;
+	}
+	
+    return 228;
 }
 
 void Triangle(int n) {
