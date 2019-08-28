@@ -12,7 +12,7 @@ void swap( int*a, int*b){
 int main() {
 
     int a,b;
-    printf("Please enter two integers:");
+    printf("Please enter two integers separated by a space:");
     scanf("%d %d",&a,&b);
 
     swap(&a,&b);
