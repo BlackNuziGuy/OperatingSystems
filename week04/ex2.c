@@ -13,3 +13,26 @@ int main(){
     
     return 0;
 }
+
+\*
+
+
+├─kded5─┬─konsole─┬─fish───sh───a.out─┬─a.out─┬─a.out─┬─a.out─┬─a.out───a.out
+        │          │       │         │                   │       │       │       └─a.out
+        │          │       │         │                   │       │       ├─a.out───a.out
+        │          │       │         │                   │       │       └─a.out
+        │          │       │         │                   │       ├─a.out─┬─a.out───a.out
+        │          │       │         │                   │       │       └─a.out
+        │          │       │         │                   │       ├─a.out───a.out
+        │          │       │         │                   │       └─a.out
+        │          │       │         │                   ├─a.out─┬─a.out─┬─a.out───a.out
+        │          │       │         │                   │       │       └─a.out
+        │          │       │         │                   │       ├─a.out───a.out
+        │          │       │         │                   │       └─a.out
+        │          │       │         │                   ├─a.out─┬─a.out───a.out
+        │          │       │         │                   │       └─a.out
+        │          │       │         │                   ├─a.out───a.out
+        │          │       │         │                   └─a.out
+
+
+*/
