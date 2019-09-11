@@ -5,14 +5,12 @@
 
 int main(void) {
     
-    int n;
+    int pid, n;
     
-    int pid = fork();
-    
-    if ( pid > 0) {
-        printf("Hello from parent [%d - %d]\n", getpid(), n);
+    if (pid = fork() > 0) {
+        printf("Hello from parent [%d - %d]\n", pid, n);
     } else if (pid == 0) {
-        printf("Hello from child [%d - %d]\n", getpid(), n);
+        printf("Hello from child [%d - %d]\n", pid, n);
     }
      
     return 0;
