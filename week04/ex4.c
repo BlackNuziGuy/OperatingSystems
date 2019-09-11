@@ -1,15 +1,19 @@
-#include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 
-char command[20];
+char command[30];
 
 
 void ask_for_input(){
     printf("$>");
-    fgets(command,20,stdin);
+    fgets(command,30,stdin);
 }
 
+void run_background(){
+    system(command);
+}
 
 int main(){
     
@@ -17,7 +21,13 @@ int main(){
     while(1) 
     {
         ask_for_input();
-        system(command);
+        int pid = fork();
+        
+        if ( pid == 0){
+            run_background();
+            break;
+        }
+        
     }
     
     
