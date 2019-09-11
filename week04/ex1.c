@@ -5,7 +5,7 @@
 
 int main(void) {
     
-    int pid, n = 228;
+    int pid, n;
     
     if (pid = fork() > 0) {
         printf("Hello from parent [%d - %d]\n", pid, n);
