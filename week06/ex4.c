@@ -20,8 +20,8 @@ void sasU( int i){
 int main(int argc, char const *argv[])
 {
 
-	signal( SIGKILL, sasKe);
-	signal( SIGSTOP, sasS);	
+	signal( SIGKILL, sasKe); //Cannot be caught
+	signal( SIGSTOP, sasS);	//Cannot be caught
 	signal( SIGUSR1, sasU);
 
 
