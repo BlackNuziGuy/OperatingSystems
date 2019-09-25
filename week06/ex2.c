@@ -1,13 +1,13 @@
 #include <stdio.h> 
 #include <unistd.h> 
 #include <stdlib.h>
-#define MSGSIZE 13 
+#define MSGSIZE 29
 
 
 
 int main() 
 { 
-	char* msg = "hello, pepe";  
+	char* msg = "Child says: \'Hello, pepe\"";  
 
 	//setup a pipe
 	int p[2], i; 
@@ -20,7 +20,7 @@ int main()
 
 
 	//parent
-	if (pid == 0) write(p[1],msg, MSGSIZE);
+	if (pid != 0) write(p[1],msg, MSGSIZE);
 	
 	// child
 	else{
