@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < 10; ++i)
 	{
-		ptrs[i] = calloc(10,1024*1024);
+		ptrs[i] = malloc(10*1024*1024);
 		memset(ptrs[i], 1, 10*1024*1024);
 		sleep(1);
 	}
