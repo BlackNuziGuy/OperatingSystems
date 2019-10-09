@@ -1,0 +1,3 @@
+13 bits specify the page offset ( 2^13 ~ 8k )
+So, only 16-13 = 3 bits are available. 
+Thus, there are 2^3 = 8 pages.
