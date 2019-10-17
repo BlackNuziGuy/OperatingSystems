@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   1982	    632	      8	   2622	    a3e	a.out

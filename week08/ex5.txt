@@ -1,0 +1,2 @@
+Physical address Is the type of address that physically exists in the computer's memory.
+Whilst the Virtual address can be considered an abstract way to refer to the physical memory, which gets generated according to the memory page size.
