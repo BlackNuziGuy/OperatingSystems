@@ -1,1 +1,1 @@
-It would be a good idea to do so: 1 2 3 4 4 3 2 1
+Using the following sequence "1 2 3 4 4 3 2 1" with 4 available page frames will give one a better hitrate, since no frames get replaced at all.
