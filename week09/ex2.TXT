@@ -1,1 +1,2 @@
-Using the following sequence "1 2 3 4 4 3 2 1" with 4 available page frames will give one a better hitrate, since no frames get replaced at all.
+Using the following sequence "1 2 3 1 2 3 1 2 3" with 3 available page frames will give one a better hitrate, since no frames get replaced at all.
+Whilst the ssequnce " 1 2 3 3 2 1 " will only worsen the situation.

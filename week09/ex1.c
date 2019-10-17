@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdint.h>
 
 void decToBinary(unsigned int n)
 {
@@ -24,7 +24,7 @@ void decToBinary(unsigned int n)
 
 int n;
 int *pages;
-unsigned int *ages;
+uint64_t *ages;
 
 ///returns -1 if not found
  int search_page(unsigned int data){
@@ -43,7 +43,9 @@ unsigned int *ages;
 
 int find_worst(){
 
-    int min = INT_MAX, ind = 0;
+    uint64_t min = ages[0];
+    int ind = 0;
+
     for ( int i = 0; i < n; ++i)
         if (ages[i] < min ) {
             min = ages[i];
@@ -59,7 +61,7 @@ void make_time_pass( unsigned int num){
         ages[i] = (ages[i] >> 1) ;
 
         if ( i == num ){
-            ages[i] = ages[i] | ( 1 << (sizeof(int)*8 -1 ) ) ;
+            ages[i] = ages[i] | ( 1ull << (sizeof(uint64_t)*8 -1 ) ) ;
         }
     }
 }
@@ -72,8 +74,8 @@ int main(){
 
 
     //Initialize
-    pages = (unsigned int*)malloc(sizeof(unsigned int) * n);
-    ages  = (unsigned int*) malloc(sizeof(unsigned int)  * n);
+    pages = (int*)malloc(sizeof(int) * n);
+    ages  = (uint64_t *) malloc(sizeof(uint64_t)  * n);
     for (unsigned int i = 0; i < n; ++i)  ages[i] = (pages[i] = 0);
 
 
@@ -94,7 +96,6 @@ int main(){
             pages[found] = data; ages[found] = 0;
         }
         make_time_pass( found ); // Do it for both
-
     }
 
 
