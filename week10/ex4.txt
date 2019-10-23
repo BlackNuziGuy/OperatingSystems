@@ -1,0 +1,8 @@
+File ./tmp/file1 has two links: 
+/home/vitaliy/OperatingSystems/week10/tmp/file1
+/home/vitaliy/OperatingSystems/week10/tmp/link1
+
+File ./tmp/link1 has two links: 
+/home/vitaliy/OperatingSystems/week10/tmp/file1
+/home/vitaliy/OperatingSystems/week10/tmp/link1
+

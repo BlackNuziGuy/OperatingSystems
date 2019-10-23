@@ -1,0 +1,8 @@
+-rw-rw-rw- 1 vitaliy vitaliy 0 окт 23 15:25 _ex3.txt
+-rwx---rwx 1 vitaliy vitaliy 0 окт 23 15:25 _ex3.txt
+-rwxrwxrwx 1 vitaliy vitaliy 0 окт 23 15:25 _ex3.txt
+
+
+660 means: -rw-rw-rw-
+775 means: -rwxrwxr-x
+777 means: -rwxrwxrwx
