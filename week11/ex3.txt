@@ -1,0 +1,1 @@
+The difference is that in the second case the buffer is reset to just "\n" after encountering the newline chracter of "Hello\n", so the child process just prints "\n", whilst in the first case both processes first print the buffered "Hello" and only then proceed to print the "\n".
